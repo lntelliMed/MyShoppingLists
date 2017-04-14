@@ -1,0 +1,120 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_background"
+    tools:context=".MainListActivity" >
+
+<TableRow
+    android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    	    	    android:background="@drawable/gradient_list_title" 
+	    
+>
+
+>
+        
+                        <ImageButton
+                            android:id="@+id/button00"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:background="@android:color/transparent"
+                            android:onClick="exitList"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_action_remove" />
+
+                                <View style="@style/Divider"/>
+                                
+                                
+                                                <ImageButton
+            android:id="@+id/button222"
+            android:src="@drawable/ic_action_paste"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+                        android:gravity="right"
+            
+                                        android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                                                        android:layout_weight="1.5"
+                            
+                        android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/listsTitleTextView"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="@string/lists_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="italic|bold"
+            android:typeface="sans" />
+
+<View style="@style/Divider"/>
+
+            
+        <ImageButton
+            android:id="@+id/button11"
+                                        android:layout_gravity="center_vertical"
+            
+                                   android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_new"
+            android:background="@android:color/transparent"
+            android:onClick="showAddList"
+            android:padding="10dp"
+            android:layout_weight="1.5"/>
+<View style="@style/Divider"/>
+
+
+                    
+         <ImageButton
+            android:id="@+id/button33"
+                                        android:layout_gravity="center_vertical"
+            
+                                   android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_overflow"
+            android:background="@android:color/transparent"
+            android:onClick="showMoreMenu"
+            android:padding="10dp"
+            android:layout_weight="1.5"/>
+
+     </TableRow>
+
+
+
+
+        
+            
+
+         
+         <TableRow
+	    android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	     >
+    <ListView
+        android:id="@+id/memberList_id"
+        android:listSelector="@drawable/list_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+                 android:layout_weight="1"
+        
+        android:dividerHeight="2dp" >
+    </ListView>
+         </TableRow>
+    
+    
+</TableLayout>
+
+
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.artimed.shoppinglist"
+
+    android:versionCode="1"
+
+    android:versionName="1.0" >
+
+
+
+    <uses-sdk
+
+        android:minSdkVersion="8"
+
+        android:targetSdkVersion="17" />
+
+
+
+    <application
+
+        android:allowBackup="true"
+
+        android:icon="@drawable/ic_launcher"
+
+        android:label="@string/app_name"
+
+        android:theme="@style/AppTheme" >
+
+        
+        <activity
+
+            android:name="com.artimed.shoppinglist.MainListActivity"
+          android:theme="@android:style/Theme.Light.NoTitleBar">
+            android:label="@string/app_name" >
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+        
+                
+                
+                
+        <activity
+
+            android:name="com.artimed.shoppinglist.MainActivity"
+          android:theme="@android:style/Theme.Light.NoTitleBar">
+
+            android:label="@string/app_name" >
+
+        </activity>
+        
+         <activity
+            android:name="com.artimed.shoppinglist.NewItem"
+            android:theme="@style/NoTitleDialog"
+            android:label="" >
+        </activity>
+        
+                 <activity
+            android:name="com.artimed.shoppinglist.EditList"
+            android:theme="@style/NoTitleDialog"
+            android:label="" >
+        </activity>
+        
+        <activity
+            android:name="com.artimed.shoppinglist.EditItem"
+            android:theme="@style/NoTitleDialog"
+            android:label="" >
+        </activity>
+        
+                 <activity
+            android:name="com.artimed.shoppinglist.NewList"
+            android:theme="@style/NoTitleDialog"
+            android:label="" >
+        </activity>
+        
+
+    </application>
+
+
+
+</manifest>

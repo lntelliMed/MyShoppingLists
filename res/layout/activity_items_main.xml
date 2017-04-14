@@ -1,0 +1,130 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@drawable/list_background"   
+        android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <TableRow
+	    android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/gradient_list_title" 
+	    >
+	    
+        <ImageButton
+            android:id="@+id/button2"
+            android:src="@drawable/ic_action_previous_item"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+                                        android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+            android:onClick="goBack"
+                        android:padding="10dp"/>
+            
+        <View style="@style/Divider"/>
+        
+        
+        
+                <ImageButton
+            android:id="@+id/button222"
+            android:src="@drawable/ic_launcher"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                                                                android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                                                        android:layout_weight="1.5"
+                            
+                        android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/listsTitleTextView"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:padding="5dp"
+            android:text="@string/items_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="italic|bold"
+            android:typeface="serif" />
+
+<View style="@style/Divider"/>
+        <ImageButton
+            android:id="@+id/button1"
+            android:src="@drawable/ic_action_new"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+                                        android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+            android:onClick="showAddItem"
+            android:padding="10dp"/>
+<View style="@style/Divider"/>
+
+        
+         <ImageButton
+            android:id="@+id/button3"
+            android:src="@drawable/ic_action_overflow"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+                                        android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+            android:onClick="showItemsMoreMenu"
+            android:padding="10dp"/>
+
+     </TableRow>
+     
+    
+    
+        <TableRow
+	    android:id="@+id/tableRow0"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    	    android:background="@drawable/gradient_bg"
+	    	    android:visibility="gone"
+	    
+	    >
+         
+                    <ImageButton
+            android:id="@+id/button1ss"
+                        android:layout_gravity="start"            
+            
+            android:src="@drawable/ic_launcher"
+            android:background="@null"
+            android:layout_weight="1"/>
+                    
+         <TextView
+            android:id="@+id/listNameTextViews"
+            android:layout_gravity="center_vertical"            
+            android:text="@string/items_subtitle"
+            android:textColor="@android:color/black"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            
+            android:layout_weight="3"/>
+
+
+                 </TableRow>
+            
+     <TableRow
+	    android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+    <ListView
+         android:id="@android:id/list"
+         android:listSelector="@drawable/list_selector"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+                 android:divider="@android:color/transparent"
+         android:layout_weight="1"
+        android:dividerHeight="2dp">
+     </ListView>
+     </TableRow>
+
+</TableLayout>
